@@ -1,42 +1,100 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f8f5f2;
-    color:#333;
+background:#f8f5f2;
+color:#333;
 }
 
 header{
-    background:#4b0d1e;
-    color:#d4af37;
-    text-align:center;
-    padding:20px;
+background:#4b0d1e;
+padding:20px 60px;
+position:sticky;
+top:0;
 }
 
-nav{
-    margin-top:10px;
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 10px;
-}
-
-section{
-    padding:40px 20px;
-}
-
-h2{
-    color:#4b0d1e;
+.logo{
+color:#d4af37;
+font-family:'Cinzel',serif;
 }
 
 ul{
-    line-height:2;
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+ul a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(75,13,30,.75),rgba(75,13,30,.75)),
+url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h2{
+font-size:55px;
+font-family:'Cinzel',serif;
+color:#d4af37;
+}
+
+.hero p{
+margin:20px 0;
+font-size:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#d4af37;
+color:#4b0d1e;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
+}
+
+section{
+padding:80px 10%;
+}
+
+section h2{
+text-align:center;
+margin-bottom:30px;
+font-family:'Cinzel',serif;
+color:#4b0d1e;
+}
+
+.card{
+background:white;
+padding:25px;
+margin:20px 0;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
 footer{
-    background:#4b0d1e;
-    color:white;
-    text-align:center;
-    padding:15px;
-}
+background:#4b0d1e;
+color:white;
+text-align:center;
+padding:20px;
+    }
